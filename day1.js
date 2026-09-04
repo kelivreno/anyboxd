@@ -1,4 +1,10 @@
-let x = 1
-x = 3
+let userName = "kel"
+let displayName = "Kelangit"
+let numOfList = 3
+let usrMsg = "username: " + userName
+let disMsg = "display name: " + displayName
+let numMsg = "number of lists: " + numOfList
 
-console.log(x)
+console.log(usrMsg)
+console.log(disMsg)
+console.log(numMsg)
