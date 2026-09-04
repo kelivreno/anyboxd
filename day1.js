@@ -1,9 +1,10 @@
 let userName = "kel"
 let displayName = "Kelangit"
 let numOfList = 3
-let usrMsg = "username: " + userName
-let disMsg = "display name: " + displayName
-let numMsg = "number of lists: " + numOfList
+
+let usrMsg = `Username: @${userName}`
+let disMsg = `Name: ${displayName}`
+let numMsg = `Lists:  ${numOfList}`
 
 console.log(usrMsg)
 console.log(disMsg)
