@@ -11,5 +11,26 @@ Created by @${creatorName}
 ${completedItems} / ${numOfItems} completed
 Progress: ${progress}%
 `
+let itemName1 = "Japan" 
+let itemType1 = "country"
+let completed = false
+let itemDisplay = ""
+if (completed == true) {
+    itemDisplay = `
+Current Item
+
+✓ ${itemName1}
+Type: ${itemType1}
+    `
+
+} else {
+    itemDisplay = `
+Current Item
+
+○ ${itemName1}
+Type: ${itemType1}
+    `
+}
 
 console.log(listDisplay)
+console.log(itemDisplay)
