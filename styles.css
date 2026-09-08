@@ -1,28 +1,53 @@
+body {
+    background-color: #333745;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 #hero {
     /* display: inline-block; */
-    text-align: center;
-    margin: 0 auto;
+    /* text-align: center; */
     width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
 
+    border: 2px solid #EEF5DB;
+    border-radius: 12px;
+
+    background-color: #E63462;
+
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
-ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-  display: inline-block;
-  text-align: left;
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-li {
-    margin: 10px;
+.list-item {
+    color: #C7EFCF;
 }
 
-.status{
-    width: 30px;
+.item-name {
+    font-size: 18px;
+    font-weight: 600;
 }
+
+.item-type {
+    font-size: 14px;
+}
+
+.status {
+    width: 30px
+}
+
 .add-item {
     width: 230px;
     display: block;
     margin: 10px auto;
+    
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
