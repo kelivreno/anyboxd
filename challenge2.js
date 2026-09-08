@@ -11,26 +11,21 @@ Created by @${creatorName}
 ${completedItems} / ${numOfItems} completed
 Progress: ${progress}%
 `
-let itemName1 = "Japan" 
-let itemType1 = "country"
-let completed = false
-let itemDisplay = ""
+const itemName1 = "Japan" 
+const itemType1 = "country"
+let symbol = ""
+let completed = true
+
 if (completed == true) {
-    itemDisplay = `
-Current Item
-
-✓ ${itemName1}
-Type: ${itemType1}
-    `
-
+    symbol =  "✓"
 } else {
-    itemDisplay = `
-Current Item
-
-○ ${itemName1}
-Type: ${itemType1}
-    `
+    symbol =  "○"
 }
+
+const itemDisplay = `Current Item
+
+${symbol} ${itemName1}
+Type: ${itemType1}`
 
 console.log(listDisplay)
 console.log(itemDisplay)
