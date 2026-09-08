@@ -1,0 +1,19 @@
+#hero {
+    /* display: inline-block; */
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  display: inline-block;
+  text-align: left;
+}
+
+.add-item {
+    width: 200px;
+}
