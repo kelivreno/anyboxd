@@ -3,6 +3,12 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+/* * {
+    outline: 1px solid red
+}  */
+/* trick to see all the element's boxes */
+
+
 #hero {
     /* display: inline-block; */
     /* text-align: center; */
@@ -27,8 +33,15 @@ body {
     margin: 0;
 }
 
+/* Padding = space between the content and its border.
+Margin = space outside the border, separating the element from other elements. */
+
 .list-item {
     color: #C7EFCF;
+
+    margin: 10px auto;
+    border: 3px solid #EEF5DB;
+    padding: 10px;
 }
 
 .item-name {
@@ -41,11 +54,11 @@ body {
 }
 
 .status {
-    width: 30px
+    max-width: 80%;
 }
 
 .add-item {
-    width: 230px;
+    max-width: 80%;
     display: block;
     margin: 10px auto;
     
