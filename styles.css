@@ -1,6 +1,20 @@
 body {
     background-color: #592941;
     font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+}
+
+/* * {
+    outline: 1px solid red
+}  */
+/* trick to see all the element's boxes */
+
+nav {
+    background-color: #498467;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+    align-items: center;
 }
 
 #hero {
@@ -11,7 +25,7 @@ body {
     margin: 40px auto;
     padding: 20px;
 
-    border: 2px solid #EEF5DB;
+    border: 3px solid #EEF5DB;
     border-radius: 12px;
 
     background-color: #498467;
@@ -27,8 +41,15 @@ body {
     margin: 0;
 }
 
+/* Padding = space between the content and its border.
+Margin = space outside the border, separating the element from other elements. */
+
 .list-item {
     color: #C7EFCF;
+
+    margin: 10px auto;
+    border: 3px solid #EEF5DB;
+    padding: 10px;
 }
 
 .item-name {
@@ -41,11 +62,11 @@ body {
 }
 
 .status {
-    width: 30px
+    max-width: 80%;
 }
 
 .add-item {
-    width: 230px;
+    max-width: 80%;
     display: block;
     margin: 10px auto;
     
