@@ -51,6 +51,7 @@ Margin = space outside the border, separating the element from other elements. *
     margin: 10px auto;
     border: 3px solid #EEF5DB;
     padding: 10px;
+    align-items: center;
 }
 
 .item-name {
@@ -74,4 +75,9 @@ Margin = space outside the border, separating the element from other elements. *
     margin: 10px auto;
     
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.rating {
+    margin-left: auto;
+    font-weight: 600;
 }
