@@ -12,9 +12,9 @@ body {
 nav {
     background-color: #498467;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /*horizontal alignment*/
     padding: 0 60px;
-    align-items: center;
+    align-items: center; /*vertical alignment*/
 }
 
 #hero {
@@ -46,15 +46,18 @@ Margin = space outside the border, separating the element from other elements. *
 
 .list-item {
     color: #C7EFCF;
-
+    display: flex;
+    gap: 12px;
     margin: 10px auto;
     border: 3px solid #EEF5DB;
     padding: 10px;
+    align-items: center;
 }
 
 .item-name {
     font-size: 18px;
     font-weight: 600;
+    margin: 0;
 }
 
 .item-type {
@@ -62,7 +65,8 @@ Margin = space outside the border, separating the element from other elements. *
 }
 
 .status {
-    max-width: 80%;
+    max-width: max-content;
+    height: fit-content;
 }
 
 .add-item {
@@ -71,4 +75,9 @@ Margin = space outside the border, separating the element from other elements. *
     margin: 10px auto;
     
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.rating {
+    margin-left: auto;
+    font-weight: 600;
 }
