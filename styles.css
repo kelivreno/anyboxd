@@ -1,6 +1,7 @@
 body {
     background-color: #592941;
     font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
 }
 
 /* * {
@@ -8,6 +9,13 @@ body {
 }  */
 /* trick to see all the element's boxes */
 
+nav {
+    background-color: #498467;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+    align-items: center;
+}
 
 #hero {
     /* display: inline-block; */
