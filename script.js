@@ -18,4 +18,11 @@ ${remainingItems} remaining
 ${percentage}%
 `
 
-console.log(msgOutput)
+const itemName = "Amadeus"
+let completed = false
+
+if (completed) {
+    console.log(`✓ ${itemName}`)
+} else {
+     console.log(`○ ${itemName}`)
+}
