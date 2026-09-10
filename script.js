@@ -19,10 +19,40 @@ ${percentage}%
 `
 
 const itemName = "Amadeus"
+const itemType = "Movie"
+let itemNameStatus = ""
 let completed = false
+const rating = 7
+let ratingClass = ""
+let ratingOutput = ""
 
 if (completed) {
-    console.log(`✓ ${itemName}`)
+    itemNameStatus= "✓"
+    if (rating >= 0 && rating <= 4) {
+        ratingClass = "Not for me"
+    } else if ( rating > 4 && rating <=7 ) {
+        ratingClass = "Good"
+    } else if (rating > 7 && rating <=10) {
+        ratingClass = "Favorite"
+    } else {
+        ratingClass= "Invalid number"
+    }
+
+    ratingOutput = `
+${itemNameStatus} ${itemName}
+${itemType}
+Rating: ${rating}/10
+${ratingClass}
+    `
 } else {
-     console.log(`○ ${itemName}`)
+    itemNameStatus = "○"
+    ratingOutput = `
+${itemNameStatus} ${itemName}
+${itemType}
+Not rated yet
+    `
 }
+
+
+
+console.log(ratingOutput)
