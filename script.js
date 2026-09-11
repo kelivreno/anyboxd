@@ -1,58 +1,13 @@
-const listName = "Movies I Want To Watch"
-const userName = "kel"
-const totalItems = 47
-let completedItems = 28
+const listName = "Things I Want To Experience Before I'm 30"
+const totalItems = 6
+const completedItems = 3
+const percentage = 100*(completedItems/totalItems)
+const progress = `${completedItems} / ${totalItems} completed - ${percentage}%`
 
-const remainingItems = totalItems - completedItems
-const percentage = Math.round(100*(completedItems/totalItems))
+const listNameHTML = document.querySelector("#list-name")
+const progressHTML = document.querySelector("#progress")
 
-const msgOutput = `
-${listName}
-
-Created by @${userName}
-
-${completedItems} / ${totalItems} completed
-
-${remainingItems} remaining
-
-${percentage}%
-`
-
-const itemName = "Amadeus"
-const itemType = "Movie"
-let itemNameStatus = ""
-let completed = false
-const rating = 7
-let ratingClass = ""
-let ratingOutput = ""
-
-if (completed) {
-    itemNameStatus= "✓"
-    if (rating >= 0 && rating <= 4) {
-        ratingClass = "Not for me"
-    } else if ( rating > 4 && rating <=7 ) {
-        ratingClass = "Good"
-    } else if (rating > 7 && rating <=10) {
-        ratingClass = "Favorite"
-    } else {
-        ratingClass= "Invalid number"
-    }
-
-    ratingOutput = `
-${itemNameStatus} ${itemName}
-${itemType}
-Rating: ${rating}/10
-${ratingClass}
-    `
-} else {
-    itemNameStatus = "○"
-    ratingOutput = `
-${itemNameStatus} ${itemName}
-${itemType}
-Not rated yet
-    `
-}
+listNameHTML.textContent = listName
+progressHTML.textContent = progress
 
 
-
-console.log(ratingOutput)
