@@ -14,7 +14,7 @@ const submitButtonHTML = document.getElementById("submit-item")
 let newItemName = ""
 let newItemType = ""
 
-const newItem = document.createElement("li")
+
 
 listNameHTML.textContent = listName
 progressHTML.textContent = progress
@@ -45,8 +45,13 @@ cancelButtonHTML.addEventListener("click", function() {
 submitButtonHTML.addEventListener("click", function() {
     newItemName = document.getElementById("item-name-input").value
     newItemType = document.getElementById("item-type-input").value
-    console.log(newItemName)
-    console.log(newItemType)
+
+    const newItem = document.createElement("li")
+    
+    newItem.classList.add("list-item")
+    
+    console.log(newItem)
+
 })
 
 
