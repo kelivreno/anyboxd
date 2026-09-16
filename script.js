@@ -1,58 +1,53 @@
-const listName = "Movies I Want To Watch"
-const userName = "kel"
-const totalItems = 47
-let completedItems = 28
-
-const remainingItems = totalItems - completedItems
+const listName = "Things I Want To Experience Before I'm 30"
+const totalItems = 6
+const completedItems = 3
 const percentage = Math.round(100*(completedItems/totalItems))
+const progress = `${completedItems} / ${totalItems} completed - ${percentage}%`
 
-const msgOutput = `
-${listName}
+const listNameHTML = document.querySelector("#list-name")
+const progressHTML = document.querySelector("#progress")
+const statusButtonHTML = document.querySelector(".status-button")
+const addButtonHTML = document.querySelector(".add-button")
+const addFormHTML = document.getElementById("add-form")
+const cancelButtonHTML = document.getElementById("cancel-button")
+const submitButtonHTML = document.getElementById("submit-item")
+let newItemName = ""
+let newItemType = ""
 
-Created by @${userName}
+const newItem = document.createElement("li")
 
-${completedItems} / ${totalItems} completed
+listNameHTML.textContent = listName
+progressHTML.textContent = progress
 
-${remainingItems} remaining
 
-${percentage}%
-`
-
-const itemName = "Amadeus"
-const itemType = "Movie"
-let itemNameStatus = ""
 let completed = false
-const rating = 7
-let ratingClass = ""
-let ratingOutput = ""
 
-if (completed) {
-    itemNameStatus= "✓"
-    if (rating >= 0 && rating <= 4) {
-        ratingClass = "Not for me"
-    } else if ( rating > 4 && rating <=7 ) {
-        ratingClass = "Good"
-    } else if (rating > 7 && rating <=10) {
-        ratingClass = "Favorite"
+statusButtonHTML.addEventListener("click", function() {
+    completed = !completed
+    if(completed){
+        statusButtonHTML.textContent = "○"
     } else {
-        ratingClass= "Invalid number"
+        statusButtonHTML.textContent = "✓"
     }
+})
 
-    ratingOutput = `
-${itemNameStatus} ${itemName}
-${itemType}
-Rating: ${rating}/10
-${ratingClass}
-    `
-} else {
-    itemNameStatus = "○"
-    ratingOutput = `
-${itemNameStatus} ${itemName}
-${itemType}
-Not rated yet
-    `
-}
+addButtonHTML.addEventListener("click", function() {
+    addFormHTML.style.display = "block"
+    addButtonHTML.style.display = "none"
+
+})
+
+cancelButtonHTML.addEventListener("click", function() {
+    addFormHTML.style.display = "none"
+    addButtonHTML.style.display = "block"
+})
+
+submitButtonHTML.addEventListener("click", function() {
+    newItemName = document.getElementById("item-name-input").value
+    newItemType = document.getElementById("item-type-input").value
+    console.log(newItemName)
+    console.log(newItemType)
+})
 
 
 
-console.log(ratingOutput)

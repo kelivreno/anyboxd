@@ -18,26 +18,26 @@
     </header>
     <main> 
         <section id="hero">
-            <h1>Welcome to Anyboxd! </h1>
-            <p>Things I Want To Experience Before 30</p>
-            <p> 3 / 5 completed </p>
-            <p>50% completed</p>
+            <h1>Welcome to Anyboxd </h1>
+            <p id="list-name"></p>
+            <p id="progress"></p>
+            <!-- <p>50% completed</p> -->
             <div class="filter-container">
                 <button class="filter-button" id="filter-all">all</button>
                 <button class="filter-button" id="filter-completed">completed</button>
                 <button class="filter-button" id="filter-incomplete">incomplete</button>
             </div>
-        </ul>
+        
         <ul class="list">
             <li class="list-item">
-                <button class="status">○</button> 
+                <button class="status-button">○</button> 
                 <div class="item">
                     <p class="item-name">Read The Brothers Karamazov</p>
                     <span class="item-type">Book</span>
                 </div>
             </li>
             <li class="list-item">
-                <button class="status">✓</button> 
+                <button class="status-button">✓</button> 
                 <div class="item">
                     <p class="item-name">Visit Japan</p>
                     <span class="item-type">Country</span>
@@ -45,14 +45,14 @@
                 <span class="rating">9/10</span>
             </li>
             <li class="list-item">
-                <button class="status">○</button> 
+                <button class="status-button">○</button> 
                 <div class="item">
                     <p class="item-name">Learn To Surf</p>
                     <span class="item-type">Activity</span>
                 </div>
             </li>
             <li class="list-item">
-                <button class="status">✓</button> 
+                <button class="status-button">✓</button> 
                 <div class="item">
                     <p class="item-name">Visit the Louvre</p>
                     <span class="item-type">Place</span>
@@ -60,7 +60,7 @@
                 <span class="rating">7/10</span>
             </li>
             <li class="list-item">
-                <button class="status">✓</button> 
+                <button class="status-button">✓</button> 
                 <div class="item">
                     <p class="item-name">Build a Raspberry Pi Project</p>
                     <span class="item-type">Project</span>
@@ -68,10 +68,18 @@
                 <span class="rating">9/10</span>
             </li>
         </ul>
-        <button class="add-item">+ Add Item</button>
+        <button class="add-button">+ Add Item</button>
+        <div id="add-form">
+            <input id="item-name-input" type="text" placeholder="Item name">
+            <input id="item-type-input" type="text" placeholder="Item type">
+
+            <button id="submit-item">Add</button>
+            <button id="cancel-button">Cancel</button>
+        </div> 
         </section>
     </main>
     
     <script src="script.js"></script>
+
 </body>
 </html>   

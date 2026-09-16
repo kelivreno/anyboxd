@@ -83,7 +83,7 @@ Margin = space outside the border, separating the element from other elements. *
     font-size: 14px;
 }
 
-.status {
+.status-button {
     max-width: max-content;
     height: fit-content;
 }
@@ -95,6 +95,12 @@ Margin = space outside the border, separating the element from other elements. *
     
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+#add-form {
+    display: none;
+}
+
+
 
 .rating {
     margin-left: auto;
