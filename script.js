@@ -49,8 +49,15 @@ submitButtonHTML.addEventListener("click", function() {
     const newItem = document.createElement("li")
     
     newItem.classList.add("list-item")
-    
+
     console.log(newItem)
+
+
+    const newStatusButton = document.createElement("button")
+    newStatusButton.classList.add("status-button")
+    newStatusButton.textContent = "○"
+
+    console.log(newStatusButton)
 
 })
 
