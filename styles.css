@@ -96,6 +96,12 @@ Margin = space outside the border, separating the element from other elements. *
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+#add-form {
+    display: none;
+}
+
+
+
 .rating {
     margin-left: auto;
     font-weight: 600;
