@@ -6,8 +6,22 @@ const progress = `${completedItems} / ${totalItems} completed - ${percentage}%`
 
 const listNameHTML = document.querySelector("#list-name")
 const progressHTML = document.querySelector("#progress")
+const statusButtonHTML = document.querySelector(".status-button")
 
 listNameHTML.textContent = listName
 progressHTML.textContent = progress
+
+
+let completed = false
+
+statusButtonHTML.addEventListener("click", function() {
+    completed = !completed
+    if(completed){
+        statusButtonHTML.textContent = "○"
+    } else {
+        statusButtonHTML.textContent = "✓"
+    }
+})
+
 
 
