@@ -59,6 +59,17 @@ submitButtonHTML.addEventListener("click", function() {
 
     console.log(newStatusButton)
 
+    const newItemInfo = document.createElement("div")
+    newItemInfo.classList.add("item")
+
+    const newNameItem= document.createElement("p")
+    newNameItem.classList.add("item-name")
+    newNameItem.textContent = newItemName
+
+    const newTypeItem = document.createElement("span")
+    newTypeItem.classList.add("item-type")
+    newTypeItem.textContent = newItemType
+
 })
 
 
